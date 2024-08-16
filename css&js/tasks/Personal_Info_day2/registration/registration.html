@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="../thankYou.html" method="GET">
+        <h2>Registration</h2>
+        <div class="firstName">
+            <label for="First_Name" >First Name</label>
+            <input id="First_Name" type="text" required>
+        </div>
+
+        <div class="lastName">
+            <label for="Last_name">Last Name</label>
+            <input id="Last_name" type="text" required>
+        </div>
+
+        <div class="email">        
+            <label for="Email">Email</label>
+            <input id="Email" type="email" required>
+        </div>
+
+        <div class="password">
+            <label for="passowrd">password</label>
+            <input id="passowrd" type="password" required>
+        </div>
+
+        <div class="rpeatPassword">
+            <label for="Repeat_password">Repeat password</label>
+            <input id="Repeat_password" type="password" required>
+        </div>
+
+        <div class="gender">
+            <label for="gender">Gender</label>
+            <br>
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="Gender">
+            <br>
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="Gender">
+        </div>
+
+        <div class="faculty">
+            <label for="faculty">Faculty</label>
+            <select name="faculty" id="faculty">
+                <option value="Helwan"></option>
+                <option value="Eng">Engineering</option>
+                <option value="cs">Computer Science</option>
+                <option value="cs_ai">Computer Science & AI</option>
+            </select>
+        </div>
+
+        <div class="intersts">
+            <label for="interests">Interests</label>
+            <br>
+            <label for="programming">Programming</label>
+            <input type="checkbox" id="programming">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="reading">
+            <label for="swimming">Swimming</label>
+            <input type="checkbox" id="swimming">
+        </div>
+
+        <div class="aboutYou">
+            <label for="aboutYou">About You</label>
+            <br>
+            <textarea placeholder="about you"></textarea>
+        </div>
+
+        <div class="terms">
+            <label for="terms">
+                I agreed to terms and condition
+            </label>
+            <input type="checkbox" id="terms">     
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+
+</body>
+</html>

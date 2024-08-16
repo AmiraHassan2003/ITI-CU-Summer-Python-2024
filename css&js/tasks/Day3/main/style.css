@@ -1,0 +1,129 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* -------------------------(3)---------------------------- */
+/* <!-- Use html ul tag and css features to make menu (bonus task) --> */
+.menu{
+    margin-bottom: 70px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 120px;
+}
+
+.menu ul{
+    list-style: none;
+    background-color: black;
+    visibility: hidden;
+    border: 3px solid #ff00006e;
+}
+
+.menu span{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: #b91a1a;
+    border-radius: 20%;
+    position: absolute;
+    top: -15px;
+    right: 2px;
+    z-index: -1;
+    
+}
+
+.menu:hover ul{
+    visibility: visible;
+}
+
+.menu ul li{
+    padding: 10px 0 10px 5px;
+}
+
+.menu ul li:hover{
+    background-color: #ff00006e;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* ------------------------------------------------------ */
+
+/* --------------------(1)----------------------------- */
+/* <!-- ⦁	Use z-index and position properties, to make a text above an image like the following -->*/
+
+.z_index{
+    position: relative;
+    display: flex;
+}
+.z_index img{
+    width: 80%;
+    height: 350px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.z_index .section{
+    position: absolute;
+    bottom: 17px;
+    right: 140px;
+    background-color: #00000080;
+    height: 80px;
+    width: 240px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.z_index .section p:first-child{
+    margin: 10px 0 15px 10px;
+    font-size: 19px;
+}
+.z_index .section p:last-child{
+    margin: 0 0 10px 10px;
+    font-size: 15px;
+}
+/* ------------------------------------------------------- */
+
+/* ------------------------(2)---------------------------- */
+/* <!-- Use flex property to make photo gallery  --> */
+
+.flex_property{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffc0cb47;
+    padding: 8px 0 8px 0px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+.flex_property .card{
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 256px;
+    justify-content: space-between;
+}
+
+.flex_property .card img{
+    width: 100%;
+}
+
+
+
+

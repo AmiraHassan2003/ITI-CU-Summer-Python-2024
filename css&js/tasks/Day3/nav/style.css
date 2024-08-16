@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #373333;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    height: 50px;
+    position: sticky;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 14px;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: green;
+}
+
+.paragraphes{
+    margin-left: 10px;
+    /* margin-top: 60px; */
+    margin-top: 30px;
+}
+
+.paragraphes p{
+    margin-bottom:60px;
+    font-size: 20px;
+}

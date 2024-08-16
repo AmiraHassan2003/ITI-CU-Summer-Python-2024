@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_day5</title>
+    <style>
+        .myclass{
+            background-color: red;
+        }
+        #mouseDiv{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        #toogleDiv{
+            height: 100px;
+            width: 100px;
+            /* background-color: rgba(165, 42, 42, 0.747); */
+        }
+        #incrementButton{
+            color: white;
+            background-color: rgba(0, 0, 0, 0.842);
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--  1.Change the text of a button with the ID "myButton" to "Clicked!" when it is clicked. -->
+    <button id="myButton" onclick="clickOnBtn()">Click On This Button</button>
+
+    <!-- 2.Display an alert with the message "Button clicked!" when a button with the id "alertButton" is clicked. Add classname to this button ”myclass”. -->
+    <button id="alertButton">Click On Alert Button</button>
+
+    <!-- 3.Change the background color of a div with the ID "colorDiv" to blue when the mouse enters the div.
+        Change it back to white when the mouse leaves the div -->
+    <div id="colorDiv" onmouseover="changeDivColor()">colorDiv</div>
+    
+    <!-- 4.Log the key pressed to the console when a key is pressed inside an input field with the ID "inputField". – hint (use keydown event) -->
+    <input type="text" id="inputField" oninput="DisplayInputContent()">
+    
+    <!-- 5.Display the current value of an input field with the ID "inputField" in a div with the ID "displayDiv" when the input field's value changes. – hint (use input event) -->
+    <div id="displayDiv">characters: </div>
+
+    <!-- 6.Prevent the default action of a link with the ID "myLink" when it is clicked, and display an alert instead. -->
+    <a href="https://www.w3schools.com" id="myLink" onclick="displayMsg(event)">go to w3schools</a>
+
+    <!-- 7.Display the coordinates of the mouse pointer in a div with the ID "mouseDiv" when the mouse moves inside the div. – hint (use mousemove event) -->
+    <div id="mouseDiv" onmousemove = "displayCoordinates(event)" onmouseleave="returnDisplayCoordinates(event)"></div>
+
+    <!-- 8.Toggle the visibility of a div with the ID "toggleDiv" when a button with the ID "toggleButton" is clicked. -->
+    <button id="toggleButton">Press On Button To Change Color Of The Div</button>
+    <div id="toogleDiv" class="myclass">toogleDiv</div>
+
+    <!-- 9.Increment a counter displayed in a span with the ID "counter" each time a button with the ID "incrementButton" is clicked. -->
+    <span id="counter"></span>
+    <button id="incrementButton">Click here</button>
+
+    <script src="style.js"></script>
+</body>
+</html>
